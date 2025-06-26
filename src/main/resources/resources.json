@@ -1,0 +1,1 @@
+[{"resource":"userConfiguration","premissions":["CREATE","VIEW","UPDATE","DELETE"],"permissionDefault":false},{"resource":"userConfirmation","premissions":["CREATE","VIEW","UPDATE","DELETE"],"permissionDefault":false},{"resource":"getUser","premissions":[],"permissionDefault":false}]
