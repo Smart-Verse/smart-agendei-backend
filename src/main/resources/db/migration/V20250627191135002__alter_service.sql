@@ -1,0 +1,1 @@
+alter table service add column color varchar(10);

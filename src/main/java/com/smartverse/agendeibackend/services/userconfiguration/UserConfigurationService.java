@@ -42,6 +42,7 @@ public class UserConfigurationService {
             userConfiguration.setEmail(item.getEmail());
             userConfiguration.setLang(Language.PORTUGUESE);
             userConfiguration.setTheme(Theme.LIGHT);
+            userConfiguration.setPhone(item.getPhone());
         });
 
         TenantContext.setCurrentTenant(oldTEnant);

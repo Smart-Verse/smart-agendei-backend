@@ -1,11 +1,12 @@
 package com.smartverse.agendeibackend.controller.userconfirmation;
 
 import com.potatotech.authorization.stereotype.Anonymous;
-import com.smartverse.smartreportbackend.config.migration.DBMigration;
-import com.smartverse.smartreportbackend.config.security.repository.AuthenticationRepository;
-import com.smartverse.smartreportbackend.repository.userconfirmation.UserConfirmationCustomRepository;
-import com.smartverse.smartreportbackend_gen.VerifyURL;
-import com.smartverse.smartreportbackend_gen.VerifyURLOutput;
+
+import com.smartverse.agendeibackend.config.migration.DBMigration;
+import com.smartverse.agendeibackend.config.security.repository.AuthenticationRepository;
+import com.smartverse.agendeibackend.repository.userconfirmation.UserConfirmationCustomRepository;
+import com.smartverse.agendeibackend_gen.VerifyURL;
+import com.smartverse.agendeibackend_gen.VerifyURLOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

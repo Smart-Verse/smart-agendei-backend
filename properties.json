@@ -19,16 +19,7 @@
             "nullable": false,
             "key": true
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
         },
         {
           "comment": "Nome do usuário",
@@ -42,16 +33,7 @@
             "nullable": false,
             "key": false
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
         },
         {
           "comment": "Foto Usuário",
@@ -65,16 +47,7 @@
             "nullable": true,
             "key": false
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
         },
         {
           "comment": "Tema",
@@ -88,16 +61,7 @@
             "nullable": true,
             "key": false
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
         },
         {
           "comment": "Linguagem sistema",
@@ -111,16 +75,7 @@
             "nullable": false,
             "key": false
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
         },
         {
           "comment": "Email",
@@ -134,16 +89,21 @@
             "nullable": false,
             "key": false
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
+        },
+        {
+          "comment": "Telefone",
+          "fieldName": "phone",
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": true,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "list": false
         },
         {
           "comment": "ID do usuário",
@@ -157,16 +117,7 @@
             "nullable": false,
             "key": false
           },
-          "list": false,
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
-          }
+          "list": false
         }
       ],
       "classExtends": "",
@@ -191,15 +142,6 @@
           "metadata": {
             "nullable": false,
             "key": true
-          },
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
           }
         },
         {
@@ -214,15 +156,6 @@
           "metadata": {
             "nullable": false,
             "key": false
-          },
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
           }
         },
         {
@@ -237,15 +170,490 @@
           "metadata": {
             "nullable": false,
             "key": false
+          }
+        }
+      ],
+      "classExtends": ""
+    },
+    {
+      "entityName": "client",
+      "tableName": "client",
+      "generateDefaultHandlers": true,
+      "handlerAbstract": false,
+      "entityFields": [
+        {
+          "comment": "ID Pessoa",
+          "fieldName": "id",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "uuid",
+            "required": true,
+            "valueDefault": ""
           },
-          "frontendProperties": {
-            "label": "",
-            "size": 0,
-            "hidden": false,
-            "order": 0,
-            "guidance": "",
-            "reference": "",
-            "enableFieldsFilter": false
+          "metadata": {
+            "nullable": false,
+            "key": true
+          }
+        },
+        {
+          "comment": "nome",
+          "fieldName": "name",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Data Nascimento",
+          "fieldName": "birthDate",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "date",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": true,
+            "key": false
+          }
+        },
+        {
+          "comment": "CPF",
+          "fieldName": "cpf",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": true,
+            "key": false
+          }
+        },
+        {
+          "comment": "Telefone",
+          "fieldName": "phone",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Email",
+          "fieldName": "email",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": true,
+            "key": false
+          }
+        },
+        {
+          "comment": "Status",
+          "fieldName": "status",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "status",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        }
+      ],
+      "classExtends": ""
+    },
+    {
+      "entityName": "service",
+      "tableName": "service",
+      "generateDefaultHandlers": true,
+      "handlerAbstract": false,
+      "entityFields": [
+        {
+          "comment": "ID",
+          "fieldName": "id",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "uuid",
+            "required": true,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": true
+          }
+        },
+        {
+          "comment": "Nome do serviço",
+          "fieldName": "name",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": true,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Descrição do serviço",
+          "fieldName": "description",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": true,
+            "key": false
+          }
+        },
+        {
+          "comment": "tempo de execução",
+          "fieldName": "executionTime",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "int",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Valor",
+          "fieldName": "price",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "decimal",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Status",
+          "fieldName": "status",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "status",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Cor na agenda",
+          "fieldName": "color",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        }
+      ],
+      "classExtends": ""
+    },
+    {
+      "entityName": "appointment",
+      "tableName": "appointment",
+      "generateDefaultHandlers": true,
+      "handlerAbstract": false,
+      "entityFields": [
+        {
+          "comment": "ID",
+          "fieldName": "id",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "uuid",
+            "required": true,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": true
+          }
+        },
+        {
+          "comment": "Cliente",
+          "fieldName": "client",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "client",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "relationShips": {
+            "fetchType": "LAZY",
+            "relationShip": "OneToOne",
+            "mappedBy": "",
+            "bidirectional": false,
+            "reference": false
+          }
+        },
+        {
+          "comment": "Serviço Principal",
+          "fieldName": "service",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "service",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "relationShips": {
+            "fetchType": "LAZY",
+            "relationShip": "OneToOne",
+            "mappedBy": "",
+            "bidirectional": false,
+            "reference": false
+          }
+        },
+        {
+          "comment": "Data Inicial",
+          "fieldName": "startDate",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "datetime",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Data Final",
+          "fieldName": "endDate",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "datetime",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Descricao",
+          "fieldName": "description",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "User",
+          "fieldName": "userName",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "userConfiguration",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "relationShips": {
+            "fetchType": "LAZY",
+            "relationShip": "OneToOne",
+            "mappedBy": "",
+            "bidirectional": false,
+            "reference": false
+          }
+        },
+        {
+          "comment": "Cor da célula",
+          "fieldName": "cellColor",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "string",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Serviços extras",
+          "fieldName": "extras",
+          "list": true,
+          "fieldProperties": {
+            "fieldType": "extras",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "relationShips": {
+            "fetchType": "LAZY",
+            "relationShip": "OneToMany",
+            "mappedBy": "",
+            "bidirectional": true,
+            "reference": false
+          }
+        },
+        {
+          "comment": "Status do agendamento",
+          "fieldName": "status",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "statusAppointment",
+            "required": true,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Valor do desconto",
+          "fieldName": "discount",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "decimal",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        },
+        {
+          "comment": "Valor total",
+          "fieldName": "total",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "decimal",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          }
+        }
+      ],
+      "classExtends": ""
+    },
+    {
+      "entityName": "extras",
+      "tableName": "extras",
+      "generateDefaultHandlers": true,
+      "handlerAbstract": false,
+      "entityFields": [
+        {
+          "comment": "ID",
+          "fieldName": "id",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "uuid",
+            "required": true,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": true
+          }
+        },
+        {
+          "comment": "Serviço Principal",
+          "fieldName": "service",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "service",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "relationShips": {
+            "fetchType": "LAZY",
+            "relationShip": "OneToOne",
+            "mappedBy": "",
+            "bidirectional": false,
+            "reference": false
+          }
+        },
+        {
+          "comment": "Referencia com agendamento",
+          "fieldName": "appointment",
+          "list": false,
+          "fieldProperties": {
+            "fieldType": "appointment",
+            "required": false,
+            "valueDefault": ""
+          },
+          "metadata": {
+            "nullable": false,
+            "key": false
+          },
+          "relationShips": {
+            "fetchType": "LAZY",
+            "relationShip": "ManyToOne",
+            "mappedBy": "",
+            "bidirectional": false,
+            "reference": false
           }
         }
       ],
@@ -274,6 +682,69 @@
           }
         ]
       }
+    },
+    {
+      "methodName": "verifyURL",
+      "httpMethod": "GET",
+      "grouper": "",
+      "metadata": {
+        "input": [
+          {
+            "parameterName": "token",
+            "parameterType": "string",
+            "list": false
+          }
+        ],
+        "output": [
+          {
+            "parameterName": "authorize",
+            "parameterType": "boolean",
+            "list": false
+          }
+        ],
+        "anonymous": true
+      }
+    },
+    {
+      "methodName": "dashboard",
+      "httpMethod": "GET",
+      "grouper": "",
+      "metadata": {
+        "anonymous": false,
+        "input": [],
+        "output": [
+          {
+            "parameterName": "countAppointmentToday",
+            "parameterType": "long",
+            "list": false
+          },
+          {
+            "parameterName": "countAppointmentCompletedWeek",
+            "parameterType": "long",
+            "list": false
+          },
+          {
+            "parameterName": "countAppointmentPendingConfirmation",
+            "parameterType": "long",
+            "list": false
+          },
+          {
+            "parameterName": "countClientsActive",
+            "parameterType": "long",
+            "list": false
+          },
+          {
+            "parameterName": "topClients",
+            "parameterType": "map",
+            "list": true
+          },
+          {
+            "parameterName": "appointemntsToday",
+            "parameterType": "appointment",
+            "list": true
+          }
+        ]
+      }
     }
   ],
   "enums": [
@@ -290,6 +761,22 @@
         "PORTUGUESE",
         "ENGLISH",
         "SPANISH"
+      ]
+    },
+    {
+      "enumName": "statusAppointment",
+      "values": [
+        "SCHEDULED",
+        "APPOINTMENT_CONFIRMED",
+        "NO_SHOW",
+        "COMPLETED"
+      ]
+    },
+    {
+      "enumName": "status",
+      "values": [
+        "ACTIVE",
+        "INACTIVE"
       ]
     }
   ]
