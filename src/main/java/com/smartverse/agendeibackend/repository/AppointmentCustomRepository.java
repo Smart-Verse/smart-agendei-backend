@@ -18,7 +18,7 @@ public interface AppointmentCustomRepository extends AppointmentRepository {
 
     @Query(nativeQuery = true,value = "SELECT COUNT(1) FROM appointment " +
             "WHERE status = '3' " +
-            "AND startDate >= :startDate")
+            "AND start_date >= :startDate")
     long countByStatusAndLast7Days(@Param("startDate") LocalDateTime startDate);
 
     @Query("SELECT a.client, COUNT(a) AS total " +
