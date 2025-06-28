@@ -8,7 +8,7 @@ Definir as seguintes variaveis de ambiente
 
     DATABASE_SCHEMA_NAME=smart_agendei
     DB_NAME=POSTGRES
-    DB_PASSWORD=229977@@##
+    DB_PASSWORD=
     DB_USERNAME=postgres
     SECRET_JWT=
     SERVER_PORT=5030
