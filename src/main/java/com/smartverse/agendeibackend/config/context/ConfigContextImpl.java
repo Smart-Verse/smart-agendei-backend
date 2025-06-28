@@ -3,7 +3,7 @@ package com.smartverse.agendeibackend.config.context;
 import org.springframework.stereotype.Component;
 
 @Component
-public abstract class ConfigContextImpl implements ConfigContext {
+public class ConfigContextImpl implements ConfigContext {
 
     @Override
     public String getUrl() {
